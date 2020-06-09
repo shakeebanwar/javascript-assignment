@@ -325,7 +325,7 @@ document.write("The Remainder is : "+a+"<br>");
 
 */
 
-// Task 5
+// Task 4
 
 /*
 var ticketPrice=600;
@@ -333,7 +333,7 @@ document.write("Cost of 5 Movie Ticket is "+ticketPrice*5);
 
 */
 
-// Task 6
+// Task 5
 
 /*
 
@@ -342,5 +342,112 @@ var len=prompt("Enter the length")
 for(i=1;i<=len;i++){
     document.write(table+" x "+i+" = "+table*i,"<br>")
 }
+
+*/
+
+
+//Task 6
+
+/*
+var celicus = prompt("Enter a Temperature in celcius");
+var FahrenHeit = celicus*9/5+32
+document.write(celicus+"C "+" IS Equal to "+FahrenHeit+"F")
+
+var FahrenHeit=prompt("Enter a Tempearure in FahrenHeit");
+var celcius=(FahrenHeit-32)*5/9;
+document.write(celcius)
+
+*/
+
+// Task 7
+
+/*
+var item1=650
+var item2=100
+var quantity1=3
+var quantity2=7
+var shipCharge=100
+var item1Total=item1*quantity1
+var item2Total=item2*quantity2
+
+document.write("Price of item1 is "+item1+"<br>")
+document.write("Quantity of item1 is "+quantity1+"<br>")
+document.write("Price of item2 is "+item2+"<br>")
+document.write("Quantity of item2 is "+quantity2+"<br>")
+document.write("Total cost is ",item1Total+item2Total+shipCharge)
+
+*/
+
+// Task 8
+
+/*
+document.write("<h1>"+"MARKSHEET"+"</h1>","<br>")
+var totalMarks=980;
+var obtainMarks=804
+var percentage=obtainMarks/totalMarks*100
+document.write("Total marks is ",totalMarks+"<br>");
+document.write("Obtain marks is ",obtainMarks+"<br>");
+document.write("Percentage is ",percentage+"<br>");
+
+*/
+
+// Task 9
+
+/*
+var dollar = 163.50;
+var saudi = 43.58;
+document.write("Total Currency in PKR :",(dollar*10)+(saudi*25))
+*/
+
+// Task 10
+
+/*
+var a = 10;
+document.write(a+5*10/2);
+
+*/
+
+
+// Task 11
+
+/*
+
+document.write("<h1>"+"Age Calculator"+"</h1>"+"<br>");
+var currentYear=2020;
+var birthYear=1998;
+document.write("Current Year is ",currentYear+"<br>");
+document.write("Birth Year is ",birthYear+"<br>");
+document.write("Your Age is  ",currentYear-birthYear+"<br>");
+
+
+*/
+
+
+// Task12
+
+/*
+
+document.write("<h1>"+"The Geometrizer"+"</h1>"+"<br>");
+var radius=20;
+document.write("The Radius of circle is ",radius+"<br>");
+var circumference=2*3.14*20;
+var area = 3.14*radius*radius
+document.write("The Circumference is ",circumference+"<br>");
+document.write("The Area is ",area+"<br>");
+*/
+
+// TASK 13
+
+/*
+document.write("<h1>"+"The LifeTime Supply Calculator"+"</h1>"+"<br>");
+var snacks = "Rite";
+var age = 15;
+var maxage = 65;
+var snacksPerDay=3;
+document.write("Favourite snack is ",snacks+"<br>");
+document.write("Current age is ",age+"<br>");
+document.write("Estimated Max Age ",maxage+"<br>");
+document.write("Amount of snacks perday is ",snacksPerDay+"<br>");
+document.write("you will need "+(maxage-age)*snacksPerDay," Choclate chip to last you until the rip old age of "+maxage);
 
 */
