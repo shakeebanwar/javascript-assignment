@@ -802,3 +802,326 @@ if("car" < "cat"){
     */
 
 
+/*
+Task 6
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="container">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Percentage</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Greater the or Equal to 80</td>
+            <td>A-one</td>
+            <td>Excellent</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Greater the or Equal to 70</td>
+            <td>A</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Greater the or Equal to 60</td>
+            <td>B</td>
+            <td>you need to improve</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>Less then 60</td>
+            <td>Fail</td>
+            <td>Sorry</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+</body>
+
+<script>
+   
+
+
+
+    document.write("<h1>","Marksheet","</h1>","<br><br><br><br>");
+    var totalMarks=300;
+    var sub1=parseInt(prompt("Enter the math marks"));
+    var sub2=parseInt(prompt("Enter the english marks"));
+    var sub3=parseInt(prompt("Enter the pst marks"));
+    var obtain=sub1+sub2+sub3;
+    var Percentage=obtain/totalMarks*100;
+    document.write("Total marks is ",totalMarks,"<br>");
+    document.write("obtain marks is ",obtain,"<br>");
+    document.write("percentage is ",Percentage,"<br>");
+    if(Percentage>=80){
+      var grade = "A-one";
+      document.write("Grade ",grade,"<br>");
+      document.write("Excellent","<br>");
+    }
+    else if(Percentage>=70){
+
+      var grade = "A";
+      document.write("Grade ",grade,"<br>");
+      document.write("Good","<br>");
+
+
+    }
+
+    else if(Percentage>=60){
+
+      var grade = "B";
+      document.write("Grade ",grade,"<br>");
+      document.write("you need to improve","<br>");
+    }
+
+    else if(Percentage<=60){
+      var grade = "Fail";
+      document.write("Grade ",grade,"<br>");
+      document.write("Sorry","<br>");
+    }
+
+</script>
+</html>
+
+
+
+*/
+
+/*
+Task 7
+var secretNumber = 10;
+var UserNumber = prompt("Enter a from range 1 to 10");
+if (UserNumber==secretNumber){
+  document.write("Bingo! Correctanswer")
+}
+
+else if(++UserNumber==secretNumber){
+
+  document.write("Close enough to the correct answer")
+  
+}
+
+*/
+
+
+
+/*
+Task 8
+
+var number = prompt("Enter a number to check divisible by 3 or not");
+if (number%3==0){
+  document.write("Number is divisible by 3")
+}
+
+else{
+  document.write("Number is not divisible by 3")
+}
+*/
+
+
+
+/*
+Task 9
+
+var number = prompt("Enter a number to check even or not");
+if(number%2==0){
+  document.write("Number is Even")
+}
+else{
+  document.write("Number is Odd")
+}
+
+*/
+
+/*
+
+Task 10
+
+var T = prompt("Enter a temperature");
+if( T > 40 ){
+
+  document.write("It is too hot outside.")
+
+}
+else if(T > 30 ){
+  document.write("The Weather today is Normal.")
+}
+else if(T > 20 ){
+  document.write("Today’s Weather is cool.")
+}
+else if(T > 10 ){
+  document.write("OMG! Today’s weather is so Cool.")
+}
+*/
+
+
+
+/*
+Task 11
+
+var firstnumber = +prompt("Enter a First number");
+var secondnumber = +prompt("Enter a Second number");
+var operator = prompt("Enter Operator for e.g +,-,/,*,%");
+
+if(operator=="+"){
+  document.write(firstnumber+secondnumber)
+}
+
+if(operator=="-"){
+  document.write(firstnumber-secondnumber)
+}
+
+
+if(operator=="*"){
+  document.write(firstnumber*secondnumber)
+}
+
+
+if(operator=="/"){
+  document.write(firstnumber/secondnumber)
+}
+
+if(operator=="%"){
+  document.write(firstnumber%secondnumber)
+}
+
+*/
+
+
+
+
+// chapters12-13.
+
+/*
+Task 1
+var a = prompt("Enter a single character");
+var t = typeof(a);
+
+if (a==a.toUpperCase()){
+
+  document.write("UpperCase","<br>")
+  document.write(t);
+
+}
+
+
+
+
+else if(a==a.toLowerCase()){
+  document.write("LowerCase","<br>")
+  document.write(t);
+
+}
+
+*/
+
+/*
+Task 2
+var a = +prompt("Enter a number 1");
+var b = +prompt("Enter a number 2");
+if(a==b){
+  document.write("Number1 and Number2 are equal")
+}
+
+else if(a>b){
+  document.write("Number1 is greater")
+}
+
+else if(a<b){
+  document.write("Number2 is greater")
+}
+
+*/
+
+/*
+
+Task 3
+var a = +prompt("Enter a number");
+if (a<0){
+  document.write("Negative")
+}
+
+else if(a>0){
+  document.write("Possitive")
+}
+
+else if(a==0){
+  document.write("Number is 0")
+}
+
+*/
+
+/*
+
+Task 4
+var a = prompt("Enter a character to check vowel or not ");
+a = a.toLowerCase();
+if (a =="a" || a =="e"|| a =="i"|| a =="o"|| a =="u" ){
+  document.write("True");
+}
+
+else{
+  document.write("False");
+}
+
+*/
+
+/*
+Task5
+
+var password = 12345;
+var userpassword = +prompt("Enter a password");
+if (userpassword==""){
+  var userpassword = +prompt("Please Enter your Password");
+  if(userpassword==password){
+    document.write(' Correct! The password youentered matches the original password')
+  }
+  else{
+    document.write('Incorrect password')
+  }
+}
+
+*/
+
+/*
+Task 6
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+}
+else{
+greeting = "Good evening";
+}
+
+*/
+
+/*
+Task 7
+
+
+var time = prompt("Enter a time in 24 hour format");
+var convertime=time.slice(0,2)%12;
+document.write(time," = ",convertime,"pm")
+
+*/
