@@ -451,3 +451,354 @@ document.write("Amount of snacks perday is ",snacksPerDay+"<br>");
 document.write("you will need "+(maxage-age)*snacksPerDay," Choclate chip to last you until the rip old age of "+maxage);
 
 */
+
+// chap 6-9
+
+/*
+TASK1 
+var a = prompt("Enter a number");
+document.write("Result"+"<br>");
+document.write("The value of a is ",a,"<br><br><br>");
+
+document.write("The value of ++a is ",++a,"<br>");
+document.write("Now the value of a is ",a,"<br><br><br>");
+
+document.write("The value of a++ is ",a++,"<br>");
+document.write("Now the value of a is ",a,"<br><br><br>");
+
+document.write("The value of --a is ",--a,"<br>");
+document.write("Now the value of a is ",a,"<br><br><br>");
+
+
+document.write("The value of a-- is ",a--,"<br>");
+document.write("Now the value of a is ",a,"<br><br><br>");
+
+*/
+
+
+/*
+Task 2
+
+ var a = 2;
+ var b = 1;
+ var Result = --a - --b + ++b + b--;
+
+ document.write("The value of of a is ",a,"<br>");
+ document.write("The value of of b is ",b,"<br>");
+ document.write("The value of of Result is ",Result,"<br>");
+
+
+ --a predecrement means the value of a is 1
+ --a - --b predecrement of a is 0 and predecrement of b is 0 
+--a - --b + ++b; we allready know the predecrement of a and b is 0 and preincrement of ++b means 1
+--a - --b + ++b + b--; predecrement of --a means 0 and precrement of --b is 0 and preincrement of ++b means 1 and post decrement of b-- means 1
+
+ */
+
+/*
+
+Task 3
+var a = prompt("Enter your name");
+document.write("Assalam Walikom ",a)
+
+*/
+
+/*
+
+Task 5
+var a = prompt("Enter a number to display the table ");
+if (a==""){
+
+    for(var i=1;i<=10;i++){
+        document.write(5*i,"<br>")
+    }
+  
+}
+else{
+
+    for(var i=1;i<=10;i++){
+        document.write(a*i,"<br>")
+    }
+    
+}
+
+*/
+
+/*
+
+Task 6
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    
+  
+<table >
+    
+    <table>
+        <tr>
+          <th>Subject</th>
+          <th>TotalMarks</th>
+          <th>ObtainMarks</th>
+          <th>percentage</th>
+        </tr>
+        <tr>
+          <td  id ="subject1"></td>
+          <td id="tmarks1"></td>
+          <td id ="obtain1"></td>
+          <td id ="per1"></td>
+        </tr>
+        <tr>
+          <td id ="subject2"></td>
+          <td id="tmarks2"></td>
+          <td id ="obtain2"></td>
+          <td id ="per2"></td>
+        </tr>
+        <tr>
+          <td id ="subject3"></td>
+          <td id="tmarks3"></td>
+          <td id ="obtain3"></td>
+          <td id ="per3"></td>
+        </tr>
+      
+        
+      </table>
+  </table>
+  
+    
+   
+</body>
+
+<script>
+    var subject1=prompt("Enter a subject 1");
+    var subject2=prompt("Enter a subject 2");
+    var subject3=prompt("Enter a subject 3");
+    
+    var totalMarks=100;
+    var obtainMarks1=prompt("Enter a obtain marks of subject 1");
+    var obtainMarks2=prompt("Enter a obtain marks of subject 2");
+    var obtainMarks3=prompt("Enter a obtain marks of subject 3");
+    
+    var percentage1=obtainMarks1/totalMarks*100;
+    var percentage2=obtainMarks2/totalMarks*100;
+    var percentage3=obtainMarks3/totalMarks*100;
+
+document.getElementById('subject1').innerHTML=subject1;
+document.getElementById('subject2').innerHTML=subject2;
+document.getElementById('subject3').innerHTML=subject3;
+
+document.getElementById('tmarks1').innerHTML=totalMarks;
+document.getElementById('tmarks2').innerHTML=totalMarks;
+document.getElementById('tmarks3').innerHTML=totalMarks;
+
+document.getElementById('obtain1').innerHTML= obtainMarks1;
+document.getElementById('obtain2').innerHTML= obtainMarks2;
+document.getElementById('obtain3').innerHTML= obtainMarks3;
+
+
+document.getElementById('per1').innerHTML=percentage1;
+document.getElementById('per2').innerHTML= percentage1;
+document.getElementById('per3').innerHTML= percentage1;
+
+
+
+
+</script>
+</html>
+
+
+
+*/
+
+
+// chap 9-11
+
+
+/*
+Task 1
+var city = prompt("Enter a city");
+city=city.toLowerCase();
+if(city=="karachi"){
+    document.write("Welcome to the city of light")
+}
+*/
+
+/*
+
+Task 2
+
+var gender = prompt("Enter a gender");
+gender=gender.toLowerCase();
+if(gender=="male"){
+    document.write("Good Morning Sir");
+}
+
+else{
+    document.write("Good Morning Madam")
+}
+*/
+
+
+/*
+Task 3
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+    <table class="table table-striped">
+        <thead>
+          <tr>
+           
+            <th scope="col">S.NO</th>
+            <th scope="col">Signal Color</th>
+            <th scope="col">Message</th>
+         
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td id="red"></td>
+            <td id ="msg1"></td>
+           
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td id="green"></td>
+            <td id ="msg2"></td>
+          
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td id="blue"></td>
+            <td id ="msg3"></td>
+         
+          </tr>
+        </tbody>
+      </table>
+
+  
+    
+   
+</body>
+
+<script>
+   
+
+red = prompt('Enter a traffic signal color');
+green = prompt('Enter a traffic signal color');
+yellow = prompt('Enter a traffic signal color');
+
+document.getElementById('red').innerHTML=red;
+document.getElementById('green').innerHTML=green;
+document.getElementById('blue').innerHTML=yellow;
+
+
+var message1="Must Stop";
+var message2="Ready to Move";
+var message3="Move Now";
+
+document.getElementById('msg1').innerHTML=message1;
+document.getElementById('msg2').innerHTML=message2;
+document.getElementById('msg3').innerHTML=message3;
+
+
+
+</script>
+</html>
+
+
+
+*/
+
+
+/*
+Task 4
+
+var fuel = prompt("Enter a fuel quantity");
+if (fuel<0.25){
+    document.write('Please refill the fuel in your car');
+}
+
+*/
+
+
+/*
+
+Task 5
+message is displayed
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+
+
+message is not displayed
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}
+
+
+message is not displayed
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+
+message is display
+if (c === 13){
+    alert("condition 2 is true");
+    }
+
+if (++c < 14){
+alert("condition 3 is true");
+}
+message is display
+if(c === 14){
+    alert("condition 4 is true");
+ }
+    
+
+message is display
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+
+
+message is display
+if (true){
+    alert("True");
+    }
+if (false){
+    alert("False");
+    }
+   
+message is display
+if("car" < "cat"){
+    alert("car is smaller than cat");
+    }
+
+    */
+
+
