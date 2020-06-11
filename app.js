@@ -1125,3 +1125,179 @@ var convertime=time.slice(0,2)%12;
 document.write(time," = ",convertime,"pm")
 
 */
+
+
+// chapters14-16
+
+/*
+Task 1
+
+var a = []
+*/
+
+/*
+Task 2
+var a = Array();
+*/
+
+
+/*
+Task 3
+var a = ["shakeeb"];
+
+*/
+
+
+
+/*
+Task 4
+var a = [1];
+
+*/
+
+
+/*
+Task 5
+
+var a = [true,false]
+*/
+
+/*
+
+Task 6
+var a = [true,"shakeeb",false,0,9.6]
+console.log(a);
+
+*/
+
+/*
+Task 7
+var a = ["SSC", "HSC","BCS","BS", "BCOM", "MS", "M.Phil", "PhD"]
+document.write("<h1>","Qualifications","</h1>","<br>")
+
+for(var i = 0;i<a.length;i++){
+  document.write(i+1," ",a[i],"<br>")
+}
+
+*/
+
+/*
+Task 8
+
+var std1=prompt("Enter a student name 1");
+var score1=prompt("Enter Student1 score");
+
+var std2=prompt("Enter a student name 2");
+var score2=prompt("Enter Student2 score");
+
+var std3=prompt("Enter a student name 3");
+var score3=prompt("Enter Student3 score");
+
+
+
+
+var Sname = new Array();
+Sname.push(std1,std2,std3);
+console.log(Sname);
+
+var score = [];
+score.push(score1,score2,score3);
+console.log(score)
+
+var totalMarks = 500;
+var percentage = [];
+
+for(var i = 0;i<score.length;i++){
+
+ var percent = score[i]/totalMarks*100
+percentage.push(percent)
+
+}
+
+document.write("Score of ",Sname[0]," is ",score[0]," Percentage: ",percentage[0]," % ","<br>")
+document.write("Score of ",Sname[1]," is ",score[1]," Percentage: ",percentage[1]," % ","<br>")
+document.write("Score of ",Sname[2]," is ",score[2]," Percentage: ",percentage[2]," % ","<br>")
+
+*/
+
+/*
+Task 9
+
+var color = ["red","white","yellow"];
+console.log(color)
+
+var user = prompt("Enter a Color name to add to first possition");
+user=user.toLowerCase();
+for(var i = 0;i<color.length;i++){
+  if (color[i]==user){
+    ind = color.indexOf(color[i])
+    console.log(ind)
+    
+  }
+
+
+
+}
+color.splice(0,0,color[ind]);
+color.splice(ind+1,1);
+document.write("After Updating ",color,"<br>")
+
+var usercolor = prompt("What color should be added in the End")
+color.push(usercolor);
+document.write("After Updating ",color,"<br>")
+
+var color1 = prompt("Enter another color");
+var color2 = prompt("Enter another color");
+
+color.unshift(color1,color2)
+document.write("After Updating ",color,"<br>")
+
+color.shift();
+document.write("After Removing First ",color,"<br>")
+
+color.pop();
+document.write("After Deleting the last ",color,"<br>")
+
+
+var col = prompt("Enter the color");
+var colpos =  prompt("Enter the possition to add")
+color.splice(colpos,0,col)
+document.write("After Updating ",color,"<br>")
+
+
+var delindex=prompt("At which possition would like to delete");
+color.splice(delindex,1);
+document.write("After Updating ",color,"<br>")
+
+*/
+
+/*
+Task 10
+var scorelist = [320,230,480,120];
+document.write(scorelist,"<br>")
+var sortScore=scorelist.sort();
+document.write(sortScore,"<br>");
+
+*/
+
+
+/*
+Task 11
+
+var city = ['karachi','lahore','islamabad','quetta'];
+document.write(city,"<br>")
+var selected = [];
+selected.splice(0,0,selected.push(city.slice(0,3)));
+selected.shift();
+document.write(selected,"<br>")
+
+*/
+
+
+/*
+Task12
+
+var arr = ["This", "is", "my", "cat"];
+document.write(arr.join(" "));
+
+*/
