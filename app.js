@@ -1301,3 +1301,246 @@ var arr = ["This", "is", "my", "cat"];
 document.write(arr.join(" "));
 
 */
+
+/*
+Task 13
+
+var device = new Array("Keyboard","MOUSE","Printer","Monitor");
+document.write("Device","<br>")
+document.write(device.join(),"<br>");
+
+for(var i = 0;i<device.length;i++){
+
+  document.write("Out:","<br>");
+  document.write(device[i],"<br>")
+}
+
+
+*/
+
+/*
+
+Task 14
+
+var device = new Array("Keyboard","MOUSE","Printer","Monitor");
+document.write("Device","<br>")
+document.write(device.join(),"<br>");
+
+for(var i = device.length-1;i>=0;i--){
+
+  
+  document.write("Out:","<br>");
+  document.write(device[i],"<br>")
+}
+
+*/
+
+
+/*
+
+Task 15
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <label for="cars">Choose a Brand:</label>
+
+    <select name="cars" id="Cars">
+      
+    </select>
+</body>
+
+<script>
+   
+
+
+var brands = ["Nokia","Samsung","Apple","Song","Haier"] 
+var obj = document.getElementById('Cars');
+for(var i = 0;i<brands.length;i++){
+
+    var opt = brands[i];
+    var e = document.createElement("option");
+    e.text = opt;
+    e.value = opt;
+    obj.add(e);
+
+}
+
+</script>
+</html>
+
+
+*/
+
+
+
+// chap 17-20
+
+/*
+Task 1
+
+var arr = [[],[]];
+*/
+
+/*
+Task 2
+
+var arr1=[[0,1,2,3],[1,0,1,2],[2,1,0,1]]
+
+for(var i = 0;i<arr1.length;i++){
+  document.write(arr1[i].join(" "),"<br>")
+}
+
+*/
+
+/*
+Task 3
+
+for(var i = 1;i<=10;i++){
+  document.write(i,"<br>")
+}
+
+*/
+
+/*
+Task 4
+
+var table = prompt("Enter a number to print the table");
+var len = prompt("Enter the length of table");
+for(var i = 1;i<=len;i++){
+  document.write(table,"x",i," = ",table*i,"<br>")
+}
+
+*/
+
+
+/*
+Task 5
+
+var fruits = ["apple", "banana", "mango", "orange","strawberry"]
+for(var i = 0;i<fruits.length;i++){
+
+  document.write(fruits[i],"<br>");
+  document.write("Elements at index ",i," is ",fruits[i],"<br>")
+}
+  */
+
+
+/*
+Task 6
+
+ document.write("Counting :")
+  for(var i = 1;i<=15;i++){
+    
+    document.write(i,",")
+  }
+
+  document.write("<br>","Reverse Counting :")
+
+  for(var i = 10;i>=1;i--){
+    
+    document.write(i,",")
+  }
+
+  document.write("<br>","Even Number:")
+
+  for(var i = 0;i<=20;i++){
+    if(i%2==0){
+      document.write(i,",")
+    }
+  }
+
+
+  document.write("<br>","Odd Number:")
+
+  for(var i = 0;i<=20;i++){
+    if(i%2==0){
+      
+    }
+    else{
+      document.write(i,",")
+    }
+  }
+
+
+document.write("<br>","Series:")
+for(var i = 1;i<=20;i++){
+  if(i%2==0){
+    document.write(i+"k",",")
+  }
+}
+
+*/
+
+
+
+/*Task 7
+var item = ["cake","applepie","cookies","chips","patties"];
+var user = prompt("Welcome to ABC Bakery what do you want Sir/Madam");
+user=user.toLowerCase();
+for(var i = 0;i<item.length;i++){
+
+  
+  if(item[i]==user){
+    document.write(item[i]," is available at index ",i," in our bakery");
+    
+    break;
+    
+  }
+  
+}
+
+*/
+
+
+/*
+Task 8
+
+var a = [24, 53, 78, 91, 12,464];
+var large = 0;
+document.write("Array of item is ")
+for(var i = 0;i<a.length;i++){
+  document.write(" ",a[i])
+  if(a[i]>large){
+    large=a[i]
+   
+    
+  }
+}
+document.write("<br>","Large number of array is ",large)
+
+
+
+*/
+
+/*
+Task 9
+
+var a = [24, 53, 78, 91, 12,565,888];
+document.write("Array Item is  ")
+for(var i =0;i<a.length;i++){
+  document.write(a[i]," ")
+}
+a.sort(function(a, b){
+  return a - b;
+});
+
+document.write("<br>","Smallest item in an array is ",a[0])
+
+*/
+
+/*
+Task 10
+for(var i=5;i<=100;i=i+5){
+  document.write(i," , ")
+}
+
+*/
